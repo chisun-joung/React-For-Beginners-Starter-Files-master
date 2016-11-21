@@ -7,9 +7,9 @@ class StorePicker extends React.Component {
         console.log('You Chaned the URL');
         // first : grab the text from the box
         const storeId = this.storeInput.value;
-        console.log('Going to ${storeId}')
+        console.log(`Going to ${storeId}`)
         //
-        this.context.router.transitionTo('/store/${storeId}')
+        this.context.router.transitionTo(`/store/${storeId}`)
     }
     render() {
         return (
